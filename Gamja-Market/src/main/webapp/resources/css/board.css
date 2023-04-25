@@ -1,0 +1,150 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+
+.board > .line {
+  display: flex;
+  height: 40px;
+}
+
+.board > .line > * {
+  color: #a97960;
+}
+
+.board > .line > .cateName {
+  width: 100px;
+  height: 40px;
+  border: solid 1px rgb(217, 207, 169);
+  background-color: rgb(239, 233, 208);
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.board > .line > .boardTitle {
+  width: 300px;
+  height: 40px;
+  border: solid 1px rgb(217, 207, 169);
+  background-color: rgb(239, 233, 208);
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.board > .line > .boardTitle:hover {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(217, 207, 169);
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.board > .line > .boardTitle > a {
+  color: #a97960;
+}
+
+.board > .line > .boardTitle > a:hover {
+  color: black;
+}
+
+.board > .line > .boardDate {
+  width: 100px;
+  height: 40px;
+  border: solid 1px rgb(217, 207, 169);
+  background-color: rgb(239, 233, 208);
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.board > .line > .boardWriter {
+  width: 100px;
+  height: 40px;
+  border: solid 1px rgb(217, 207, 169);
+  background-color: rgb(239, 233, 208);
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.cateName,
+.boardTitle,
+.boardDate,
+.boardWriter {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.cateName,
+.boardWriter {
+  justify-content: center;
+}
+
+.searchBar {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+}
+
+.searchBar >form> input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: solid 1px #d06059;
+    margin: 10px;
+    outline: none;
+  }
+  
+  .searchBar > form > select{
+      width : 70px;
+      height: 30px;
+      border: solid 1px #d06059;
+      outline: none;
+  }
+  
+  .searchBar > form > input[type="submit"]{
+      width : 60px;
+      height: 30px;
+      border: solid 1px #d06059;
+      background-color: transparent;
+      color: #5a3b45;
+      outline: none;
+      cursor: pointer;
+  }
+  
+  .searchBar > form > input[type="submit"] :hover{
+      color: white;
+  }
+  
+
+.button {
+  background-color: transparent;
+  border: solid 1px rgb(217, 207, 169);
+  width: 80px;
+  cursor: pointer;
+  margin-left: 80px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: rgb(217, 207, 169);
+  padding: 10px;
+  color: white;
+}
+
+.pages {
+  margin: 15px 0 15px 0;
+}
+
+#button-box {
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+}
+
+#button-box > .button {
+	padding: 5px;
+	margin: 0;
+	margin-bottom: 100px;
+}

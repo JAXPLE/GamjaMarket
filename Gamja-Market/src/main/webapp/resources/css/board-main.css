@@ -1,0 +1,26 @@
+.board-main {
+    grid-area: board-main;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    margin-bottom: 20px;
+  }
+  
+.board-main > .cards > .boardContent {
+	height:100px;
+	padding: 10px 0;
+}
+
+#board-cards {
+	display: flex;
+	flex-flow: wrap column;
+	height: 300px;
+	justify-content: space-between;
+}
+
+#board-cards > .boardContent {
+	margin-top: 20px;
+}
+
+#bContent {
+	margin-top: 20px;
+}

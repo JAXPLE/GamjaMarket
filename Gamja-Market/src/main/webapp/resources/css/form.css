@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+.box>h2 {
+	text-align: center;
+}
+
+.info {
+	margin: 10px 0 0 100px;
+}
+
+#login {
+	margin: auto;
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+	width: 200px;
+	padding: 10px;
+	border: solid 1px #5a3b45;
+	margin: 10px;
+	outline: none;
+}
+
+input[type="button"] {
+	background-color: transparent;
+	border: solid 1px #5a3b45;
+	width: max-content;
+	min-width: 80px;
+	cursor: pointer;
+	padding: 10px;
+}
+.buttons{
+	margin-top : 10px;
+}
+
+.buttons>input, input[type="submit"] {
+	background-color: transparent;
+	border: solid 1px #5a3b45;
+	width: 80px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+input[type="submit"]:hover, [type="button"]:hover, .button:hover {
+	padding: 10px;
+	color: #d06059;
+}
+
+.list>input {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	margin-top: 30px;
+	width: 90px;
+	height: auto;
+	border-radius: 5px;
+	border: none;
+	background-color: #ffada8;
+	color: white;
+	cursor: pointer;
+}
+
+.list {
+	display: flex;
+	flex-flow: wrap column;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+#message, #nickmessage, #passmessage {
+	font-size: 0.8em;
+	margin-left : 10px;
+}
+
+#sbContent {
+	width: 400px;
+	height: 300px;
+	resize: none;
+}
+
+#joinbutton{
+	margin-left : 100px;
+}
+
+#join-session {
+	display: flex;
+	justify-content: center;
+}
+
+#loginbutton, #leavebutton{
+	margin-left : 80px;
+}

@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+	margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#list-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 30vw;
+  margin-bottom: 100px;
+}
+
+#otherUserList {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatList {
+  list-style: none;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.chatList:before {
+  content: "💬";
+  margin-right: 5px;
+}
+
+.chatList:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.nickname {
+    font-size: small;
+    color: gray;
+}
+
+.message {
+	font-size: small;
+	color: #E9DE99;
+}

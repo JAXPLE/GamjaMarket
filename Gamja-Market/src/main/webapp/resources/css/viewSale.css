@@ -1,0 +1,92 @@
+@import
+	url("https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css")
+	;
+
+@import
+	url("https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css")
+	;
+	
+.product {
+	display: grid;
+	grid-template-areas: "img" "clientInfo" "detail";
+	margin-top: 70px;
+	margin-bottom: 15px;
+}
+
+.product>.img {
+	grid-area: img;
+	min-width: 450px;
+	padding: 10px;
+}
+
+.product>.img>img {
+	width: 240px;
+	object-fit: cover;
+}
+
+.product>.clientInfo {
+	grid-area: clientInfo;
+	border-bottom: 2px solid white;
+	min-width: 300px;
+	padding: 10px;
+}
+
+.product>.detail {
+	grid-area: detail;
+	border-bottom: 2px solid white;
+	padding: 10px;
+	min-width: 300px;
+	min-height: 300px;
+}
+
+.product>.detail>h4 {
+	margin-bottom: 15px;
+}
+
+.product>.setInterests {
+	padding: 10px;
+}
+
+.product>.setInterests>#isInterested {
+	cursor: pointer;
+	margin: 10px;
+}
+
+.countOfInterests {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button {
+	background-color: transparent;
+	border: solid 1px rgb(217, 207, 169);
+	width: 80px;
+	height: 40px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.button:hover {
+	background-color: rgb(217, 207, 169);
+	color: white;
+}
+
+.buttonArea {
+	display: flex;
+	justify-content: space-around;
+	align-self: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 35vw;
+}
+
+#chat-button {
+	align-self: center;
+	justify-self: right;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	background-color: #d06059;
+	color: white;
+	cursor: pointer;
+}

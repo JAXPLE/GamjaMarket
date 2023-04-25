@@ -1,0 +1,32 @@
+.adminBox {
+	display:flex;
+	justify-content: space-around;
+	height : 1600px;
+	width : 1600px;
+}
+
+.adminBox > .deleteZone{
+	width : 800px;
+	display: flex;
+	justify-content: center;
+}
+
+.adminBox > .btnZone{
+	width : 800px;
+	display: flex;
+	justify-content: center;
+}
+
+
+.adminBox > .btnZone > .interactionBtn > form {
+  display: flex;
+  float : right;
+  flex-direction: column;
+}
+
+.adminBox > .btnZone > .interactionBtn > form > input[type="button"] {
+	width: 300px;
+	height : 100px;
+	margin: 5px 0;
+	border : thin solid #D06059;
+}

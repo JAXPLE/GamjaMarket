@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap")
+	;
+
+@import
+	url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap")
+	;
+
+* {
+	padding: 0;
+	margin: 0;
+	color: #5a3b45;
+	font-family: "Noto Sans KR", sans-serif;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	margin-left: 5vw;
+}
+
+#logo-title {
+	font-family: "Poor Story", cursive;
+	color: #a97960;
+	margin-left: 0.5vw;
+	font-size: 3rem;
+	white-space: nowrap;
+}
+
+#chatList {
+	display: flex;
+	flex-flow: row;
+}
+
+#chatchat {
+	color: red;
+}
+
+a {
+	text-decoration: none;
+	color: #d06059;
+}
+
+a>ul>li {
+	color: #d06059;
+}
+
+.container {
+	display: grid;
+	grid-template-areas: "header" "index-section" "popular-section"
+		"board-section" "chat-section" "footer";
+	grid-template-rows: 120px auto auto auto auto 100px;
+	height: 100vh;
+	margin: 0;
+}
+
+header {
+	grid-area: header;
+	padding-top: 4vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+header>ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: flex-end;
+	margin-right: 30px;
+	font-weight: bold;
+}
+
+.sidebar {
+	grid-area: div;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.sidebar>ul>li {
+	margin-right: 50px;
+}
+
+.sidebar>ul>li>a {
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+li {
+	margin-right: 15px;
+}
+
+nav {
+	grid-area: nav;
+	font-size: 20px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	width: 50vw;
+}
+
+nav>ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50vw;
+}
+
+nav>ul>li>a {
+	color: #a97960;
+	font-weight: bold;
+	font-size: 1.4rem;
+	white-space: nowrap;
+}
+
+.mylist>li>a:hover {
+	color: #e9de99;
+}
+
+.mylist {
+	white-space: nowrap;
+	min-width: max-content;
+	width: 100px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+footer {
+	grid-area: footer;
+	text-align: center;
+	padding-top: 5vh;
+	background-color: #fff7ca;
+}
+
+.verti-ul {
+	flex-flow: wrap row;
+}
+
+#sellPic {
+	width: auto;
+	height: auto;
+	margin-left: 10vw;
+	background-color: #fff7ca;
+}
+
+#sellPic>img {
+	width: 40vw;
+	height: auto;
+}
+
+#index-section {
+	grid-area: index-section;
+	display: flex;
+	flex-flow: wrap row;
+	align-items: flex-start;
+	width: 90vw;
+	height: auto;
+	min-height: 40vw;
+	background-color: #fffff6;
+	padding: 0 5vw;
+	padding-top: 10vh;
+	display: flex;
+}
+
+table thead tr {
+	border-bottom: 1px solid rgb(217, 207, 169);
+}
+
+table td, table th {
+	padding: 10px;
+}
+
+#nav-list>li>a {
+	cursor: pointer;
+	position: relative;
+	width: 150px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#nav-list>li>a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	width: 0%;
+	height: 30px;
+	box-sizing: border-box;
+	border-bottom: 3px solid #a97960;
+	transition: width 0.5s, left 0.5s;
+}
+
+#nav-list>li>a:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.sidebar>ul>li>a:hover {
+	color: #E9DE99;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: center;
+	border-spacing: 20px;
+}
+
+#board-section {
+	grid-area: board-section;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	width: 90vw;
+	height: auto;
+	background-color: #ffada8;
+	padding: 5vh 5vw;
+}
+
+#popular-section {
+	grid-area: popular-section;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	width: 90vw;
+	height: auto;
+	padding: 5vh 5vw;
+	background-color: ivory;
+}
+
+#map-area {
+	display: flex;
+	flex-flow: wrap column;
+	align-items: baseline;
+	padding: 2vw;
+	margin-left: 8vw;
+	margin-top: 5vh;
+}
+
+#map-area>h1 {
+	color: #5a3b45;
+	font-size: 3rem;
+}
+
+#info {
+	color: #5a3b45;
+	font-size: 1em;
+}
+
+#chat-section {
+	grid-area: chat-section;
+	display: grid;
+	grid-template-areas :
+	"chat-info chatPic"
+	"go-chat none"
+	;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 6fr 1fr;
+	width: 90vw;
+	height: auto;
+	padding: 5vh 5vw;
+	background-color: ivory;
+}
+
+#chatPic {
+	grid-area: chatPic;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+
+#chatPic>img {
+	width: 20vw;
+	height: auto;
+	align-self: flex-end;
+	margin: auto;
+}
+
+#chat-info {
+	grid-area: chat-info;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+
+#go-chat {
+	grid-area: go-chat;
+	height: 50px;
+	
+}

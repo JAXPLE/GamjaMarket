@@ -1,0 +1,120 @@
+.board {
+  display: grid;
+  grid-template-areas:
+    "titleLine"
+    "content"
+    "date";
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  justify-content: center;
+}
+
+.titleLine {
+  grid-area: titleLine;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid rgb(217, 207, 169);
+  padding: 10px;
+  width: 600px;
+  height: 50px;
+}
+
+.boardContent {
+  grid-area: content;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 3px solid rgb(217, 207, 169);
+  width: 600px;
+}
+
+.boardDate {
+  grid-area: date;
+  padding: 10px;
+  width: 600px;
+  height: 50px;
+  text-align: right;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comHeader {
+  width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.comment > .line {
+  display: flex;
+  padding: 0 10px 0 10px;
+  width: 660px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.comment > .line > .comWriter {
+  width: 60px;
+  height: 66px;
+  padding-left: 10px;
+  border-bottom: 3px solid rgb(217, 207, 169);
+  margin: 0px;
+}
+
+.comment > .line > .comContent {
+  padding-left: 10px;
+  width: 390px;
+  height: 66px;
+  text-align: left;
+  border-bottom: 3px solid rgb(217, 207, 169);
+  margin: 0px;
+}
+
+.comDate {
+  width: 100px;
+  height: 66px;
+  text-align: center;
+  border-bottom: 3px solid rgb(217, 207, 169);
+  margin: 0px;
+}
+
+.comButton {
+  width: 70px;
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.comButton > .cmtBtn {
+  width: 70px;
+  height: 30px;
+  margin: 0 0 3px 0;
+  padding: 1px;
+}
+
+.commentForm {
+  padding-top: 20px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentForm > #comContent {
+  width: 540px;
+  height: 100px;
+  resize: none;
+  margin-right: 10px;
+}
+
+.boardBtn {
+  display: flex;
+}
+
+.boardBtn > .button {
+  margin: 10px;
+}

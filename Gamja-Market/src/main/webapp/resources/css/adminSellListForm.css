@@ -1,0 +1,30 @@
+img{
+	width:50px;
+	height:50px;
+}
+
+.categoryBox{
+	display: flex;
+}
+
+.addCategory,
+.deleteCategory
+{
+	margin: 0 5px 0 5px;
+}
+
+th > button {
+	width: max-content;
+	min-width: 50px;
+	height: max-content;
+}
+
+.board > th > h2,
+.menu > th > h2 {
+	font-size: 1rem;
+	white-space: nowrap;
+}
+
+.board > tbody > th {
+	white-space: nowrap;
+}

@@ -1,0 +1,27 @@
+.formBox > form {
+    display: grid;
+    grid-template-areas:
+        "inputBox previewBox"
+        "buttonBox previewBox"
+    ;
+}
+
+form > .inputBox {
+    grid-area: inputBox;
+    padding: 10px;
+}
+
+form > .previewBox {
+    grid-area: previewBox;
+    padding: 10px;
+}
+
+form > .buttonBox {
+    grid-area: buttonBox;
+    padding: 10px;
+}
+
+.previewBox > img {
+    width: 240px;
+    object-fit: cover;
+}
